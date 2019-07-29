@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sandwich Condiment</title>
+</head>
+<body>
+<h1>Sandwich condiment</h1>
+<form method="get" action="/sandwich/save" >
+    <input type="checkbox" name="condiment" value="Lettuce" > Lettuce
+    <input type="checkbox" name="condiment" value="Tomato"> Tomato
+    <input type="checkbox" name="condiment" value="Mustard"> Mustard
+    <input type="checkbox" name="condiment" value="Sprouts"> Sprouts
+    <input type="submit" value="Save">
+    <div>------------------------------------------------------</div>
+</form>
+<a th:text="${condiment}"></a>
+</body>
+</html>
